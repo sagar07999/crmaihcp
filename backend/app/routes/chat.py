@@ -100,7 +100,12 @@ Please describe your interaction or ask me a question."""
 
         # ---------------- FOLLOW-UP ----------------
 
-        if "follow-up" in lower or "follow up" in lower:
+        if (
+    "generate follow up" in lower
+    or "generate follow-up" in lower
+    or "follow up suggestion" in lower
+    or "follow-up suggestion" in lower
+):
 
             return {
                 "message":
